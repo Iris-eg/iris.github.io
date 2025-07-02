@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris - فن الحلويات لشركاء النجاح</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="your-logo.svg" alt="Iris Logo"> </div>
+            <ul>
+                <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="#collection">تشكيلتنا</a></li>
+                <li><a href="#about">عن Iris</a></li>
+                <li><a href="#partners">الشركاء</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>فن الحلويات... لشركاء النجاح</h1>
+            <p>نقدم إبداعات تليق بأرقى الأذواق، لنرتقي بتجربة ضيوفكم.</p>
+            <a href="#collection" class="cta-button">اكتشفوا تشكيلتنا</a>
+        </div>
+    </main>
+
+    <section id="collection" class="featured-products">
+        <h2>أصناف صنعت بشغف</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="cake-image.jpg" alt="كيكات فاخرة"> <h3>الكيكات والمعجنات</h3>
+                <a href="#">استعراض الفئة</a>
+            </div>
+            <div class="product-card">
+                <img src="tart-image.jpg" alt="تارت وحلويات فردية"> <h3>التارت والقطع الفردية</h3>
+                <a href="#">استعراض الفئة</a>
+            </div>
+            <div class="product-card">
+                <img src="chocolate-image.jpg" alt="شوكولاتة فاخرة"> <h3>الشوكولاتة الفاخرة</h3>
+                <a href="#">استعراض الفئة</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-iris" class="why-us">
+        <h2>الجودة التي تصنع الفارق</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="icon">⚜️</div>
+                <h3>أجود المكونات</h3>
+                <p>ننتقي مكوناتنا من أفضل المصادر العالمية لنضمن نكهة لا تُنسى.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">✔️</div>
+                <h3>دقة والتزام</h3>
+                <p>نلتزم بأعلى معايير الدقة في التوريد والتوصيل للحفاظ على علاقة ثقة متينة.</p>
+            </div>
+            <div class="feature">
+                <div class="icon">✨</div>
+                <h3>إبداع متجدد</h3>
+                <p>قائمة حلوياتنا في تطور مستمر على يد أمهر الطهاة لتقديم كل ما هو جديد ومميز.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Iris. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>

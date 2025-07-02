@@ -1,0 +1,169 @@
+/* ======== إعدادات أساسية ======== */
+:root {
+    --purple-main: #4A148C; /* بنفسجي الشعار - قد تحتاج لتعديله للدرجة الدقيقة */
+    --cream-bg: #FDFBF7; /* لون الخلفية الكريمي */
+    --gold-accent: #C0A062; /* الذهبي الخفيف */
+    --dark-text: #333333; /* لون النص الأساسي */
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Nunito Sans', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--cream-bg);
+    color: var(--dark-text);
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* دعم اللغة العربية */
+    text-align: right;
+}
+
+/* ======== الهيدر ======== */
+header {
+    background-color: rgba(253, 251, 247, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+nav .logo img {
+    height: 50px; /* اضبط ارتفاع الشعار */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-text);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: var(--purple-main);
+}
+
+/* ======== قسم Hero ======== */
+.hero-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('hero-dessert.jpg'); /* صورة الخلفية الرئيسية */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-family: var(--heading-font);
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: var(--purple-main);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #380f6b; /* درجة أغمق قليلاً */
+}
+
+/* ======== الأقسام العامة ======== */
+section {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--purple-main);
+}
+
+/* ======== قسم المنتجات ======== */
+.products-grid, .features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    width: 300px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-family: var(--heading-font);
+    margin: 20px;
+}
+
+.product-card a {
+    display: block;
+    padding: 15px;
+    background-color: var(--cream-bg);
+    text-decoration: none;
+    color: var(--purple-main);
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.product-card a:hover {
+    background-color: #f5f1ea;
+}
+
+/* ======== قسم "لماذا نحن" ======== */
+.feature {
+    width: 300px;
+}
+
+.feature .icon {
+    font-size: 2.5rem;
+    color: var(--gold-accent);
+}
+
+.feature h3 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+}
+
+/* ======== الفوتر ======== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0d9cf;
+}
