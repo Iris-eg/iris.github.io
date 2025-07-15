@@ -7,7 +7,7 @@
     --gray-text: #777777;
     --border-color: #EAEAEA;
     --body-font: 'Poppins', sans-serif;
-    --container-width: 900px; /* Narrower container for a cleaner look */
+    --container-width: 900px;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: var(--body-font); background-color: var(--white-bg); color: var(--dark-text); direction: rtl; line-height: 1.7; font-weight: 400; }
@@ -22,26 +22,31 @@ body { font-family: var(--body-font); background-color: var(--white-bg); color: 
 }
 .logo-container {
     text-align: center;
-    margin: -50px auto 0 auto; /* Overlap effect */
+    margin: -70px auto 0 auto; /* زودنا المسافة لفوق عشان اللوجو يفضل متسنتر */
     position: relative;
     z-index: 2;
 }
-.logo {
+/* --- NEW LOGO IMAGE STYLE --- */
+.logo-image-wrapper {
     display: inline-block;
     background: white;
-    padding: 10px 30px;
-    border-radius: 15px;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--dark-text);
+    padding: 10px;
+    border-radius: 100%; /* بيخلي الإطار دائري */
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    overflow: hidden; /* *** السطر ده هو الحل *** بيقص زوايا الصورة المربعة */
+}
+.logo-image-wrapper img {
+    display: block;
+    height: 120px;
+    width: 120px;
+    object-fit: cover; /* *** الحل هنا *** */
 }
 .tagline {
     font-size: 0.9rem;
     color: var(--gray-text);
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .filter-pills {
     display: flex;
@@ -102,11 +107,17 @@ body { font-family: var(--body-font); background-color: var(--white-bg); color: 
     font-size: 0.9rem;
     margin: 0;
 }
+/* --- NEW PRICE BUTTON STYLE --- */
 .product-price {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--purple-main);
-    text-align: left;
+    background-color: var(--purple-main);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    min-width: 80px; /* Ensures all buttons have a similar width */
 }
 
 /* ======== CONTACT FOOTER ======== */
@@ -168,6 +179,6 @@ body { font-family: var(--body-font); background-color: var(--white-bg); color: 
 /* ======== RESPONSIVE ======== */
 @media(max-width: 768px) {
     .top-banner { height: 180px; }
-    .logo { font-size: 2rem; }
-    .product-price { font-size: 1rem; }
+    .logo-image-wrapper img { height: 80px; width: 80px; }
+    .logo-container { margin-top: -50px; }
 }
