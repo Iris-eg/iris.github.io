@@ -1,0 +1,173 @@
+/* ======== GENERAL SETUP & VARIABLES ======== */
+:root {
+    --purple-main: #5C2A9D;
+    --white-bg: #FFFFFF;
+    --light-gray-bg: #F7F7F7;
+    --dark-text: #222222;
+    --gray-text: #777777;
+    --border-color: #EAEAEA;
+    --body-font: 'Poppins', sans-serif;
+    --container-width: 900px; /* Narrower container for a cleaner look */
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--body-font); background-color: var(--white-bg); color: var(--dark-text); direction: rtl; line-height: 1.7; font-weight: 400; }
+.container { max-width: var(--container-width); margin: 0 auto; padding: 0 20px; }
+
+/* ======== PAGE STRUCTURE ======== */
+.top-banner {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+.logo-container {
+    text-align: center;
+    margin: -50px auto 0 auto; /* Overlap effect */
+    position: relative;
+    z-index: 2;
+}
+.logo {
+    display: inline-block;
+    background: white;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--dark-text);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.tagline {
+    font-size: 0.9rem;
+    color: var(--gray-text);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.filter-pills {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 2.5rem 0;
+}
+.pill-btn {
+    background-color: var(--light-gray-bg);
+    color: var(--dark-text);
+    border: 1px solid var(--border-color);
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.pill-btn.active {
+    background-color: var(--purple-main);
+    color: white;
+    border-color: var(--purple-main);
+}
+.product-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 5rem;
+}
+.product-item {
+    display: flex;
+    align-items: center;
+    background: var(--light-gray-bg);
+    padding: 15px;
+    border-radius: 15px;
+    transition: opacity 0.4s ease;
+}
+.product-item.hidden {
+    display: none;
+}
+.product-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.product-details {
+    flex-grow: 1;
+}
+.product-details h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.product-details p {
+    color: var(--gray-text);
+    font-size: 0.9rem;
+    margin: 0;
+}
+.product-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--purple-main);
+    text-align: left;
+}
+
+/* ======== CONTACT FOOTER ======== */
+.contact-footer {
+    background-color: var(--light-gray-bg);
+    padding: 4rem 0 2rem 0;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+.contact-footer h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.contact-footer p {
+    max-width: 400px;
+    margin: 0.5rem auto 1.5rem auto;
+    color: var(--gray-text);
+}
+.contact-phone-button {
+    display: inline-block;
+    background-color: var(--purple-main);
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s;
+}
+.contact-phone-button:hover {
+    background-color: #4a2182;
+}
+.copyright {
+    font-size: 0.9rem;
+    color: var(--gray-text);
+    margin-top: 2rem;
+}
+
+/* ======== FLOATING ACTION BUTTON ======== */
+.fab {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--purple-main);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: transform 0.3s;
+}
+.fab:hover {
+    transform: scale(1.05);
+}
+
+/* ======== RESPONSIVE ======== */
+@media(max-width: 768px) {
+    .top-banner { height: 180px; }
+    .logo { font-size: 2rem; }
+    .product-price { font-size: 1rem; }
+}
