@@ -1,81 +1,193 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iris - فن صناعة الحلوى</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iris - حرفية الكروشيه للبراندات الفاخرة</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="main-header">
-        <nav class="navbar container">
-            <a href="index.html" class="logo">Iris</a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">الرئيسية</a></li>
-                <li><a href="products.html">منتجاتنا</a></li>
-                <li><a href="contact.html">اتصل بنا</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <section class="hero-section">
-            <div class="hero-content fade-in">
-                <h1 class="hero-title">فن يُذاق.</h1>
-                <p class="hero-subtitle">في Iris، كل قطعة حلوى هي تحفة فنية، مصممة خصيصًا لترتقي بتجربة ضيوفك.</p>
-                <a href="products.html" class="btn btn-primary">اكتشف إبداعاتنا</a>
-            </div>
-        </section>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="logo">Iris</a>
+      <ul class="nav-links">
+        <li><a href="#about">عنا</a></li>
+        <li><a href="#portfolio">أعمالنا</a></li>
+        <li><a href="#journey">رحلتنا</a></li>
+        <li><a href="#contact" class="btn btn-outline">ابدأ مشروعك</a></li>
+      </ul>
+    </div>
+  </nav>
 
-        <section class="about-section container fade-in">
-            <div class="about-content">
-                <h2 class="section-title">قصتنا تبدأ بالشغف</h2>
-                <p>ليه اسم "Iris"؟ عشان زي زهرة السوسن، كل قطعة بنعملها فيها تفاصيل فنية وألوان من السعادة. القصة بدأت بشغف بسيط: إزاي نعمل قطعة حلو مثالية؟ مش مجرد سكر وطعم حلو، لأ، قطعة تكون هي نجمة القعدة وتخلق ذكرى حلوة متتنسيش. من هنا، كبر الحلم وبقى "Iris"، وعد بالجودة والحب في كل قضمة بنقدمها.</p>
-            </div>
-            <div class="about-image">
-                <img src="img/1.jpg" alt="صورة فنية للحلويات">
-            </div>
-        </section>
+  <header id="home" class="hero-v4">
+    <div class="hero-bg">
+        <img src="hd1.png" alt="خلفية تظهر دقة تصنيع حقائب الكروشيه اليدوية لشركة Iris">
+    </div>
+    <div class="hero-overlay"></div>
+    
+    <div class="container">
+      <div class="hero-content reveal" data-animate="fade-left">
+        <h1>حيث تلتقي الحرفية اليدوية بقوة البراند الخاص بك.</h1>
+        <p>
+          Iris تحول تصاميم الكروشيه الفنية إلى خطوط إنتاج قوية. نصمم ونورد حقائب يدوية بجودة موحدة، مصممة حصرياً لتعكس هوية علامتك التجارية.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">ابدأ تصميم مجموعتك</a>
+          <a href="#portfolio" class="btn btn-secondary">شاهد أعمالنا</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-        <section class="featured-products-section">
-            <div class="container">
-                <h2 class="section-title fade-in">لمحة من إبداعاتنا</h2>
-                <div class="featured-grid">
-                    <div class="featured-card fade-in">
-                        <img src="img/2.jfif" alt="تشيز كيك">
-                        <h3>تارت التشيز كيك</h3>
-                        <p>قوام كريمي غني ونكهات مبتكرة.</p>
-                    </div>
-                    <div class="featured-card fade-in">
-                        <img src="img/3.jfif" alt="مولتن كيك">
-                        <h3>المولتن كيك</h3>
-                        <p>بركان من الشوكولاتة السايحة الدافية.</p>
-                    </div>
-                </div>
-                <div class="text-center fade-in">
-                     <a href="products.html" class="btn btn-secondary">شاهد التشكيلة الكاملة</a>
-                </div>
-            </div>
-        </section>
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal" data-animate="fade-right">
+          <span class="sub-title">معادلة Iris</span>
+          <h2>المعادلة الصعبة: جودة اليد... وقوة الإنتاج.</h2>
+          <p>ميزتنا التنافسية تكمن في الدقة. في Iris، نحن نضمن أن القطعة رقم 1000 مطابقة تماماً للقطعة الأولى. نصمم بهوية البراند الخاص بك، وننتج بالكميات التي يحتاجها، وبجودة الحرفي الواحد.</p>
+        </div>
+        <div class="about-image reveal" data-animate="fade-left">
+          <img src="ab1.png" alt="صورة فنية لحقيبة كروشيه">
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section class="cta-section fade-in">
-            <div class="container">
-                <h2>جاهز لشراكة من نوع خاص؟</h2>
-                <p>دع حلويات Iris تكون اللمسة النهائية التي تميز قائمتك.</p>
-                <a href="tel:01121742662" class="btn btn-primary">اتصل بنا الآن</a>
-            </div>
-        </section>
-    </main>
+  <section id="portfolio" class="section bg-light">
+    <div class="container">
+      <div class="section-header reveal" data-animate="fade-up">
+        <span class="sub-title">أعمالنا</span>
+        <h2>تصاميم حصرية. جودة استثنائية.</h2>
+      </div>
+      
+      <div class="portfolio-gallery">
+        <div class="portfolio-item reveal" data-animate="fade-up">
+          <img src="g1.png" alt="تصميم حقيبة 1" class="portfolio-img" data-src="https://placehold.co/1200x1600/eee/999?text=Lifestyle+Shot+1">
+        </div>
+        <div class="portfolio-item reveal" data-animate="fade-up" data-delay="100">
+          <img src="g2.png" alt="تفاصيل حقيبة 1" class="portfolio-img" data-src="https://placehold.co/1200x1200/ddd/999?text=Detail+Shot+1">
+        </div>
+        <div class="portfolio-item reveal" data-animate="fade-up" data-delay="200">
+          <img src="g3.png" alt="تصميم حقيبة 2" class="portfolio-img" data-src="https://placehold.co/1200x1400/e5e5e5/999?text=In-Situ+Shot">
+        </div>
+        <div class="portfolio-item reveal" data-animate="fade-up">
+          <img src="g4.png" alt="تصميم حقيبة 3" class="portfolio-img" data-src="https://placehold.co/1200x1700/d9d9d9/999?text=Lifestyle+Shot+2">
+        </div>
+        <div class="portfolio-item reveal" data-animate="fade-up" data-delay="100">
+          <img src="g5.png" alt="مجموعة حقائب" class="portfolio-img" data-src="https://placehold.co/1200x1300/f0f0f0/999?text=Collection+Shot">
+        </div>
+        <div class="portfolio-item reveal" data-animate="fade-up" data-delay="200">
+          <img src="g6.png" alt="تفاصيل حقيبة 3" class="portfolio-img" data-src="https://placehold.co/1200x1500/e8e8e8/999?text=Detail+Shot+2">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer class="main-footer">
-        <p>&copy; <span id="current-year"></span> Iris. فن صناعة الحلوى.</p>
-    </footer>
-    <script src="js/main.js"></script>
+  <section id="journey" class="section">
+    <div class="container">
+      <div class="section-header reveal" data-animate="fade-up">
+        <span class="sub-title">رحلة الشراكة</span>
+        <h2>من الفكرة إلى خط الإنتاج.</h2>
+      </div>
+      <div class="journey-steps">
+        <div class="step reveal" data-animate="fade-up" data-delay="0">
+          <span class="step-number">01</span>
+          <h3>التصميم الحصري</h3>
+          <p>نبدأ بجلسة استشارة لفهم هوية البراند، ثم نصمم نماذج حصرية (Prototypes) للمجموعة.</p>
+        </div>
+        <div class="step reveal" data-animate="fade-up" data-delay="200">
+          <span class="step-number">02</span>
+          <h3>الإنتاج الكمي</h3>
+          <p>بعد اعتماد النموذج، يبدأ فريقنا الإنتاج الكمي مع الحفاظ على أعلى معايير الجودة اليدوية.</p>
+        </div>
+        <div class="step reveal" data-animate="fade-up" data-delay="400">
+          <span class="step-number">03</span>
+          <h3>ضمان الجودة والتسليم</h3>
+          <p>نلتزم بالتسليم في المواعيد المتفق عليها، مع ضمان جودة يضمن تطابق كل قطعة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section bg-dark">
+    <div class="container">
+      <div class="section-header reveal" data-animate="fade-up">
+        <span class="sub-title">ابدأ مشروعك</span>
+        <h2>هل أنت مستعد لتمييز البراند الخاص بك؟</h2>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info reveal" data-animate="fade-up" data-delay="200">
+          <h3>تواصل معنا مباشرة</h3>
+          <p>فريقنا جاهز لتحويل رؤيتك إلى واقع ملموس. يمكنك استخدام الفورم، أو التواصل معنا عبر القنوات التالية:</p>
+          
+          <div class="info-item">
+            <h4><i class="icon-phone"></i> أرقام الهواتف (قسم B2B)</h4>
+            <p>
+                <a href="tel:+20100000001">+20 100 000 001</a>
+                (للاستفسارات العامة)
+            </p>
+            <p>
+                <a href="tel:+20100000002">+20 100 000 002</a>
+                (مدير الشراكات)
+            </p>
+          </div>
+          
+          <div class="info-item">
+            <h4><i class="icon-email"></i> البريد الإلكتروني</h4>
+            <p><a href="mailto:projects@iris-crochet.com">projects@iris-crochet.com</a></p>
+          </div>
+          
+           <div class="info-item">
+            <h4><i class="icon-location"></i> المقر الرئيسي</h4>
+            <p>123 شارع التصميم، القاهرة الجديدة، مصر</p>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" data-animate="fade-up" data-delay="400">
+          <h3>أو املأ الفورم</h3>
+          <div class="form-group">
+            <input type="text" placeholder="اسم البراند (الشركة)" required>
+            <input type="email" placeholder="البريد الإلكتروني للعمل" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="المطلوب (مثال: إنتاج 500 حقيبة)" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="رسالة مختصرة عن المشروع (اختياري)"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">اطلب عرض سعر لمشروعك</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close-btn">&times;</span>
+    <img src="" alt="صورة مكبرة للعمل" id="lightbox-img">
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-about">
+        <h3 class="logo">Iris</h3>
+        <p>حرفية الكروشيه للبراندات الفاخرة.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>تواصل معنا</h4>
+        <p>هاتف: <a href="tel:+20100000001">+20 100 000 001</a></p>
+        <p>بريد: <a href="mailto:projects@iris-crochet.com">projects@iris-crochet.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Iris. كل الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
